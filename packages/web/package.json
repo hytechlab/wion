@@ -1,11 +1,11 @@
 {
-  "name": "@gims/common",
-  "version": "1.0.1-alpha.0",
-  "description": "Common Dependencies",
+  "name": "@gims/web",
+  "version": "1.0.0",
+  "description": "Web Application",
   "author": "Hytech Lab <hytechlab@gmx.com>",
   "homepage": "https://github.com/hytechlab/wion#readme",
   "license": "MIT",
-  "main": "lib/common.js",
+  "main": "lib/web.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -21,13 +21,16 @@
     "url": "git+https://github.com/hytechlab/wion.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "dependencies": {
+  "@gims/common":"^1.0.1-alpha.0",
+  "react-dom": "^16.12.0",
+  "react": "^16.12.0"
   },
   "bugs": {
     "url": "https://github.com/hytechlab/wion/issues"
-  },
-  "dependencies": {
-    "@babel/plugin-proposal-decorators": "^7.8.3",
-    "mobx": "^5.15.4"
   }
 }
